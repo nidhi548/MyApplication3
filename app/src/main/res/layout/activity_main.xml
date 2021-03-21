@@ -1,0 +1,55 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="3"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:ignore="Suspicious0dp"
+        android:background="#90FB68">
+        <!-- viewpager to show images -->
+<com.denzcoskun.imageslider.ImageSlider
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:auto_cycle="true"
+    app:delay="0"
+    app:period="1000"
+    app:corner_radius="5"
+    android:id="@+id/slider"
+    app:placeholder="@drawable/ic_launcher_foreground"
+    app:error_image="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        tools:ignore="Suspicious0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Category"
+            android:gravity="center"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/grid_layout_category"
+            android:background="@color/teal_200">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:id="@+id/recycler_view_grid"
+                android:background="@drawable/border"/>
+        </GridLayout>
+    </LinearLayout>
+</LinearLayout>

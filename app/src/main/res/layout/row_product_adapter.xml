@@ -1,0 +1,48 @@
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#F4F4F4">
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_foreground"
+        android:background="@color/teal_700"
+        android:id="@+id/image_view_adapter"
+        android:layout_margin="10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:id="@+id/text_view_product_name_adapter"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/image_view_adapter"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MRP"
+        android:id="@+id/text_view_price_adapter"
+        android:layout_toRightOf="@+id/image_view_adapter"
+        android:layout_below="@+id/text_view_product_name_adapter"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:id="@+id/text_view_price_fragment"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
